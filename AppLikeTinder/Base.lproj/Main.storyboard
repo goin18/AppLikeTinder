@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BTs-a1-Spb">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -20,7 +21,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="461"/>
+            <point key="canvasLocation" x="140" y="551"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="CCq-oc-aRs">
@@ -53,7 +54,51 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fel-K2-bDe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="880" y="461"/>
+            <point key="canvasLocation" x="860" y="551"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="o2d-CS-9uf">
+            <objects>
+                <viewController id="jDy-XG-WN4" customClass="ProfileViewController" customModule="AppLikeTinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sHe-Uj-icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="cQd-30-Ubd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K52-dY-N28">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oTW-bt-NRM">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="554"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKo-2M-wE2">
+                                <rect key="frame" x="16" y="562" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oTW-bt-NRM" firstAttribute="leading" secondItem="K52-dY-N28" secondAttribute="leadingMargin" constant="-16" id="68f-I7-E6F"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oTW-bt-NRM" secondAttribute="trailing" constant="-16" id="8Q7-sg-cBA"/>
+                            <constraint firstItem="yKo-2M-wE2" firstAttribute="leading" secondItem="K52-dY-N28" secondAttribute="leadingMargin" id="CDe-Uf-lec"/>
+                            <constraint firstItem="yKo-2M-wE2" firstAttribute="trailing" secondItem="K52-dY-N28" secondAttribute="trailingMargin" id="Ke7-3f-uHO"/>
+                            <constraint firstItem="cQd-30-Ubd" firstAttribute="top" secondItem="oTW-bt-NRM" secondAttribute="bottom" constant="46" id="Q0T-4T-1dX"/>
+                            <constraint firstItem="cQd-30-Ubd" firstAttribute="top" secondItem="yKo-2M-wE2" secondAttribute="bottom" constant="8" id="ShU-QH-OfO"/>
+                            <constraint firstItem="oTW-bt-NRM" firstAttribute="top" secondItem="sHe-Uj-icb" secondAttribute="bottom" constant="-64" id="a3J-0J-Hva"/>
+                            <constraint firstItem="yKo-2M-wE2" firstAttribute="top" secondItem="oTW-bt-NRM" secondAttribute="bottom" constant="8" id="eEZ-6S-fCi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eg2-eZ-mBC"/>
+                    <connections>
+                        <outlet property="imageView" destination="oTW-bt-NRM" id="P1f-0X-Nr4"/>
+                        <outlet property="nameLabel" destination="yKo-2M-wE2" id="fxo-zt-gMY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rbk-rf-3hM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="1909"/>
         </scene>
         <!--Cards View Controller-->
         <scene sceneID="JWx-oA-1Hh">
@@ -108,6 +153,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q83-Ov-2gO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-572" y="1226"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QLL-YB-yDq">
+            <objects>
+                <navigationController storyboardIdentifier="ProfileNavController" automaticallyAdjustsScrollViewInsets="NO" id="5D8-br-0zG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9iG-pq-8xH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jDy-XG-WN4" kind="relationship" relationship="rootViewController" id="Cyv-AJ-Yew"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hQW-pY-Ptf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-572" y="1909"/>
         </scene>
     </scenes>
 </document>

@@ -19,6 +19,8 @@
 		D34FA0891B93108A00DECB3F /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34FA0881B93108A00DECB3F /* SwipeView.swift */; };
 		D34FA08C1B9318D100DECB3F /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34FA08B1B9318D100DECB3F /* CardsViewController.swift */; };
 		D3D718371B949648001CF5E7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D718361B949648001CF5E7 /* LoginViewController.swift */; };
+		D3D7183A1B94A2B3001CF5E7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D718391B94A2B3001CF5E7 /* User.swift */; };
+		D3D7183C1B94AF5C001CF5E7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7183B1B94AF5C001CF5E7 /* ProfileViewController.swift */; };
 		D3F305E51B945BAC009125E5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F305E31B945BAC009125E5 /* Parse.framework */; };
 		D3F305E61B945BAC009125E5 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F305E41B945BAC009125E5 /* ParseFacebookUtils.framework */; };
 		D3F305E81B945BD1009125E5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F305E71B945BD1009125E5 /* AudioToolbox.framework */; };
@@ -62,6 +64,8 @@
 		D34FA0881B93108A00DECB3F /* SwipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
 		D34FA08B1B9318D100DECB3F /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		D3D718361B949648001CF5E7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D3D718391B94A2B3001CF5E7 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D3D7183B1B94AF5C001CF5E7 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D3F305E31B945BAC009125E5 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		D3F305E41B945BAC009125E5 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		D3F305E71B945BD1009125E5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -149,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				D34FA0621B9309F300DECB3F /* AppDelegate.swift */,
+				D3D718381B94A296001CF5E7 /* Data */,
 				D34FA0851B930A2000DECB3F /* Views */,
 				D34FA08A1B93189300DECB3F /* ViewControllers */,
 				D34FA0691B9309F300DECB3F /* Main.storyboard */,
@@ -203,9 +208,18 @@
 				D34FA0671B9309F300DECB3F /* ViewController.swift */,
 				D34FA08B1B9318D100DECB3F /* CardsViewController.swift */,
 				D3D718361B949648001CF5E7 /* LoginViewController.swift */,
+				D3D7183B1B94AF5C001CF5E7 /* ProfileViewController.swift */,
 			);
 			name = ViewControllers;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		D3D718381B94A296001CF5E7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D3D718391B94A2B3001CF5E7 /* User.swift */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 		D3F305E21B945B95009125E5 /* Frameworks */ = {
@@ -366,7 +380,9 @@
 				D34FA0681B9309F300DECB3F /* ViewController.swift in Sources */,
 				D34FA0661B9309F300DECB3F /* AppLikeTinder.xcdatamodeld in Sources */,
 				D34FA08C1B9318D100DECB3F /* CardsViewController.swift in Sources */,
+				D3D7183A1B94A2B3001CF5E7 /* User.swift in Sources */,
 				D34FA0871B930A5700DECB3F /* CardView.swift in Sources */,
+				D3D7183C1B94AF5C001CF5E7 /* ProfileViewController.swift in Sources */,
 				D34FA0891B93108A00DECB3F /* SwipeView.swift in Sources */,
 				D34FA0631B9309F300DECB3F /* AppDelegate.swift in Sources */,
 			);
