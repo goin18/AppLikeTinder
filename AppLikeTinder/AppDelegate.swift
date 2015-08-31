@@ -20,11 +20,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         Parse.setApplicationId("J2ZaOTVyLAALX1tCeqbkWKAzfoBdKYLT1lWv2D7D", clientKey: "WSIIYUYjjsR2xMp5RHZYy17X5N6v7Da8Mx0jmtU3")
-        /*
-        var testObject = PFObject(className: "TestObject")
-        testObject["foo"] = "Marko"
-        testObject.saveInBackground()
-        */
+        
+        PFFacebookUtils.initializeFacebook()
+        
+        var storyboard = UIStoryboard(name: "Main", bundle: nil)
+        var initialViewController: UIViewController
+        
+        if PFUser.currentUser() != nil {
+            initialViewController = storyboard.instantiateViewControllerWithIdentifier("CardNavController") as! UIViewController
+        } else {
+            initialViewController = storyboard.instantiateViewControllerWithIdentifier("LoginViewController") as! UIViewController
+        }
+        
+        self.window?.rootViewController = initialViewController
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
     

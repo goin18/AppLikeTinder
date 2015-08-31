@@ -18,6 +18,7 @@
 		D34FA0871B930A5700DECB3F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34FA0861B930A5700DECB3F /* CardView.swift */; };
 		D34FA0891B93108A00DECB3F /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34FA0881B93108A00DECB3F /* SwipeView.swift */; };
 		D34FA08C1B9318D100DECB3F /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34FA08B1B9318D100DECB3F /* CardsViewController.swift */; };
+		D3D718371B949648001CF5E7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D718361B949648001CF5E7 /* LoginViewController.swift */; };
 		D3F305E51B945BAC009125E5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F305E31B945BAC009125E5 /* Parse.framework */; };
 		D3F305E61B945BAC009125E5 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F305E41B945BAC009125E5 /* ParseFacebookUtils.framework */; };
 		D3F305E81B945BD1009125E5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F305E71B945BD1009125E5 /* AudioToolbox.framework */; };
@@ -60,6 +61,7 @@
 		D34FA0861B930A5700DECB3F /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		D34FA0881B93108A00DECB3F /* SwipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
 		D34FA08B1B9318D100DECB3F /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		D3D718361B949648001CF5E7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D3F305E31B945BAC009125E5 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		D3F305E41B945BAC009125E5 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		D3F305E71B945BD1009125E5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -200,6 +202,7 @@
 			children = (
 				D34FA0671B9309F300DECB3F /* ViewController.swift */,
 				D34FA08B1B9318D100DECB3F /* CardsViewController.swift */,
+				D3D718361B949648001CF5E7 /* LoginViewController.swift */,
 			);
 			name = ViewControllers;
 			path = ..;
@@ -359,6 +362,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3D718371B949648001CF5E7 /* LoginViewController.swift in Sources */,
 				D34FA0681B9309F300DECB3F /* ViewController.swift in Sources */,
 				D34FA0661B9309F300DECB3F /* AppLikeTinder.xcdatamodeld in Sources */,
 				D34FA08C1B9318D100DECB3F /* CardsViewController.swift in Sources */,
