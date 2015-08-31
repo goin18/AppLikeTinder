@@ -14,6 +14,9 @@
 		D34FA06D1B9309F300DECB3F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D34FA06C1B9309F300DECB3F /* Images.xcassets */; };
 		D34FA0701B9309F300DECB3F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D34FA06E1B9309F300DECB3F /* LaunchScreen.xib */; };
 		D34FA07C1B9309F300DECB3F /* AppLikeTinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34FA07B1B9309F300DECB3F /* AppLikeTinderTests.swift */; };
+		D34FA0871B930A5700DECB3F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34FA0861B930A5700DECB3F /* CardView.swift */; };
+		D34FA0891B93108A00DECB3F /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34FA0881B93108A00DECB3F /* SwipeView.swift */; };
+		D34FA08C1B9318D100DECB3F /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34FA08B1B9318D100DECB3F /* CardsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +34,16 @@
 		D34FA0611B9309F300DECB3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D34FA0621B9309F300DECB3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D34FA0651B9309F300DECB3F /* AppLikeTinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppLikeTinder.xcdatamodel; sourceTree = "<group>"; };
-		D34FA0671B9309F300DECB3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D34FA0671B9309F300DECB3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = AppLikeTinder/ViewController.swift; sourceTree = "<group>"; };
 		D34FA06A1B9309F300DECB3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D34FA06C1B9309F300DECB3F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D34FA06F1B9309F300DECB3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D34FA0751B9309F300DECB3F /* AppLikeTinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppLikeTinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D34FA07A1B9309F300DECB3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D34FA07B1B9309F300DECB3F /* AppLikeTinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLikeTinderTests.swift; sourceTree = "<group>"; };
+		D34FA0861B930A5700DECB3F /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		D34FA0881B93108A00DECB3F /* SwipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
+		D34FA08B1B9318D100DECB3F /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				D34FA0621B9309F300DECB3F /* AppDelegate.swift */,
-				D34FA0671B9309F300DECB3F /* ViewController.swift */,
+				D34FA0851B930A2000DECB3F /* Views */,
+				D34FA08A1B93189300DECB3F /* ViewControllers */,
 				D34FA0691B9309F300DECB3F /* Main.storyboard */,
 				D34FA06C1B9309F300DECB3F /* Images.xcassets */,
 				D34FA06E1B9309F300DECB3F /* LaunchScreen.xib */,
@@ -113,6 +120,26 @@
 				D34FA07A1B9309F300DECB3F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D34FA0851B930A2000DECB3F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D34FA0861B930A5700DECB3F /* CardView.swift */,
+				D34FA0881B93108A00DECB3F /* SwipeView.swift */,
+			);
+			name = Views;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D34FA08A1B93189300DECB3F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D34FA0671B9309F300DECB3F /* ViewController.swift */,
+				D34FA08B1B9318D100DECB3F /* CardsViewController.swift */,
+			);
+			name = ViewControllers;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +244,9 @@
 			files = (
 				D34FA0681B9309F300DECB3F /* ViewController.swift in Sources */,
 				D34FA0661B9309F300DECB3F /* AppLikeTinder.xcdatamodeld in Sources */,
+				D34FA08C1B9318D100DECB3F /* CardsViewController.swift in Sources */,
+				D34FA0871B930A5700DECB3F /* CardView.swift in Sources */,
+				D34FA0891B93108A00DECB3F /* SwipeView.swift in Sources */,
 				D34FA0631B9309F300DECB3F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
