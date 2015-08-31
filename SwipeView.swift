@@ -17,6 +17,8 @@ class SwipeView: UIView {
         case Right
     }
     
+    weak var delegate: SwipeViewDelegate?
+    
     private let card: CardView = CardView()
     
     private var originalPoint:CGPoint?
@@ -44,7 +46,7 @@ class SwipeView: UIView {
     
     func dragged(gestureRecognizer: UIPanGestureRecognizer) {
         let distance = gestureRecognizer.translationInView(self)
-        println("Distance x: \(distance.x) y: \(distance.y)")
+        //println("Distance x: \(distance.x) y: \(distance.y)")
         
         switch gestureRecognizer.state {
         case UIGestureRecognizerState.Began:
@@ -80,11 +82,14 @@ class SwipeView: UIView {
             parentWith *= -1
         }
         
-        UIView.animateWithDuration(0.3, animations: { () -> Void in
-            self.center.x = self.frame.origin.x + parentWith
+        UIView.animateWithDuration(0.3, animations: {
+                self.center.x = self.frame.origin.x + parentWith
+            }, completion: {
+            success in
+                if let d = self.delegate {
+                    s == Direction.Right ? d.swipeRight() : d.swipeLeft()
+                }
         })
-        
-        
     }
     
     private func resetViewPositionAndTransformations() {
@@ -105,3 +110,9 @@ class SwipeView: UIView {
 //        addConstraint(NSLayoutConstraint(item: card, attribute: NSLayoutAttribute.Trailing, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Trailing, multiplier: 1.0, constant: 0))
 //    }
 }
+
+protocol SwipeViewDelegate: class {
+    func swipeLeft()
+    func swipeRight()
+}
+
