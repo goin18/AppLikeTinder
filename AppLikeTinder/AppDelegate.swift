@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import FacebookSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,7 +18,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        Parse.setApplicationId("J2ZaOTVyLAALX1tCeqbkWKAzfoBdKYLT1lWv2D7D", clientKey: "WSIIYUYjjsR2xMp5RHZYy17X5N6v7Da8Mx0jmtU3")
+        /*
+        var testObject = PFObject(className: "TestObject")
+        testObject["foo"] = "Marko"
+        testObject.saveInBackground()
+        */
         return true
+    }
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
+        return FBAppCall.handleOpenURL(url, sourceApplication: sourceApplication, withSession: PFFacebookUtils.session())
     }
 
     func applicationWillResignActive(application: UIApplication) {
@@ -36,12 +48,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        FBAppCall.handleDidBecomeActiveWithSession(PFFacebookUtils.session())
     }
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
         self.saveContext()
+        PFFacebookUtils.session()?.close()
     }
 
     // MARK: - Core Data stack

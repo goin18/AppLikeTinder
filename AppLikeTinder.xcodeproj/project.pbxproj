@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		768A6B16E027A3823B96430F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38397C4250986705400BD6E1 /* libPods.a */; };
 		D34FA0631B9309F300DECB3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34FA0621B9309F300DECB3F /* AppDelegate.swift */; };
 		D34FA0661B9309F300DECB3F /* AppLikeTinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D34FA0641B9309F300DECB3F /* AppLikeTinder.xcdatamodeld */; };
 		D34FA0681B9309F300DECB3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34FA0671B9309F300DECB3F /* ViewController.swift */; };
@@ -17,6 +18,18 @@
 		D34FA0871B930A5700DECB3F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34FA0861B930A5700DECB3F /* CardView.swift */; };
 		D34FA0891B93108A00DECB3F /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34FA0881B93108A00DECB3F /* SwipeView.swift */; };
 		D34FA08C1B9318D100DECB3F /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34FA08B1B9318D100DECB3F /* CardsViewController.swift */; };
+		D3F305E51B945BAC009125E5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F305E31B945BAC009125E5 /* Parse.framework */; };
+		D3F305E61B945BAC009125E5 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F305E41B945BAC009125E5 /* ParseFacebookUtils.framework */; };
+		D3F305E81B945BD1009125E5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F305E71B945BD1009125E5 /* AudioToolbox.framework */; };
+		D3F305EA1B945BDC009125E5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F305E91B945BDC009125E5 /* CFNetwork.framework */; };
+		D3F305EC1B945BE8009125E5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F305EB1B945BE8009125E5 /* CoreGraphics.framework */; };
+		D3F305EE1B945BF2009125E5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F305ED1B945BF2009125E5 /* CoreLocation.framework */; };
+		D3F305F01B945BFB009125E5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F305EF1B945BFB009125E5 /* QuartzCore.framework */; };
+		D3F305F21B945C05009125E5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F305F11B945C05009125E5 /* Security.framework */; };
+		D3F305F41B945C0C009125E5 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F305F31B945C0C009125E5 /* StoreKit.framework */; };
+		D3F305F61B945C16009125E5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F305F51B945C16009125E5 /* SystemConfiguration.framework */; };
+		D3F305F81B945C20009125E5 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F305F71B945C20009125E5 /* libz.dylib */; };
+		D3F305FA1B945C2B009125E5 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F305F91B945C2B009125E5 /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		38397C4250986705400BD6E1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		76EE566D02C77587F7EB734A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		BB899088F6CFB4606ED4E84A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D34FA05D1B9309F300DECB3F /* AppLikeTinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppLikeTinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D34FA0611B9309F300DECB3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D34FA0621B9309F300DECB3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +60,19 @@
 		D34FA0861B930A5700DECB3F /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		D34FA0881B93108A00DECB3F /* SwipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
 		D34FA08B1B9318D100DECB3F /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		D3F305E31B945BAC009125E5 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		D3F305E41B945BAC009125E5 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		D3F305E71B945BD1009125E5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D3F305E91B945BDC009125E5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D3F305EB1B945BE8009125E5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D3F305ED1B945BF2009125E5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D3F305EF1B945BFB009125E5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D3F305F11B945C05009125E5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D3F305F31B945C0C009125E5 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		D3F305F51B945C16009125E5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D3F305F71B945C20009125E5 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		D3F305F91B945C2B009125E5 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		D3F305FB1B945CF2009125E5 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +80,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3F305FA1B945C2B009125E5 /* libsqlite3.dylib in Frameworks */,
+				D3F305F81B945C20009125E5 /* libz.dylib in Frameworks */,
+				D3F305F61B945C16009125E5 /* SystemConfiguration.framework in Frameworks */,
+				D3F305F41B945C0C009125E5 /* StoreKit.framework in Frameworks */,
+				D3F305F21B945C05009125E5 /* Security.framework in Frameworks */,
+				D3F305F01B945BFB009125E5 /* QuartzCore.framework in Frameworks */,
+				D3F305EE1B945BF2009125E5 /* CoreLocation.framework in Frameworks */,
+				D3F305EC1B945BE8009125E5 /* CoreGraphics.framework in Frameworks */,
+				D3F305EA1B945BDC009125E5 /* CFNetwork.framework in Frameworks */,
+				D3F305E81B945BD1009125E5 /* AudioToolbox.framework in Frameworks */,
+				D3F305E61B945BAC009125E5 /* ParseFacebookUtils.framework in Frameworks */,
+				D3F305E51B945BAC009125E5 /* Parse.framework in Frameworks */,
+				768A6B16E027A3823B96430F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,12 +106,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C9B241720F2DEC6BE87DCECD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38397C4250986705400BD6E1 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE2CF53C7EC474AEC07CDAF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB899088F6CFB4606ED4E84A /* Pods.debug.xcconfig */,
+				76EE566D02C77587F7EB734A /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D34FA0541B9309F300DECB3F = {
 			isa = PBXGroup;
 			children = (
 				D34FA05F1B9309F300DECB3F /* AppLikeTinder */,
 				D34FA0781B9309F300DECB3F /* AppLikeTinderTests */,
 				D34FA05E1B9309F300DECB3F /* Products */,
+				CE2CF53C7EC474AEC07CDAF1 /* Pods */,
+				C9B241720F2DEC6BE87DCECD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +154,7 @@
 				D34FA06E1B9309F300DECB3F /* LaunchScreen.xib */,
 				D34FA0641B9309F300DECB3F /* AppLikeTinder.xcdatamodeld */,
 				D34FA0601B9309F300DECB3F /* Supporting Files */,
+				D3F305E21B945B95009125E5 /* Frameworks */,
 			);
 			path = AppLikeTinder;
 			sourceTree = "<group>";
@@ -100,6 +162,7 @@
 		D34FA0601B9309F300DECB3F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D3F305FB1B945CF2009125E5 /* Bridging-Header.h */,
 				D34FA0611B9309F300DECB3F /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -142,6 +205,25 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		D3F305E21B945B95009125E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3F305F91B945C2B009125E5 /* libsqlite3.dylib */,
+				D3F305F71B945C20009125E5 /* libz.dylib */,
+				D3F305F51B945C16009125E5 /* SystemConfiguration.framework */,
+				D3F305F31B945C0C009125E5 /* StoreKit.framework */,
+				D3F305F11B945C05009125E5 /* Security.framework */,
+				D3F305EF1B945BFB009125E5 /* QuartzCore.framework */,
+				D3F305ED1B945BF2009125E5 /* CoreLocation.framework */,
+				D3F305EB1B945BE8009125E5 /* CoreGraphics.framework */,
+				D3F305E91B945BDC009125E5 /* CFNetwork.framework */,
+				D3F305E71B945BD1009125E5 /* AudioToolbox.framework */,
+				D3F305E31B945BAC009125E5 /* Parse.framework */,
+				D3F305E41B945BAC009125E5 /* ParseFacebookUtils.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,9 +231,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D34FA07F1B9309F300DECB3F /* Build configuration list for PBXNativeTarget "AppLikeTinder" */;
 			buildPhases = (
+				59BE890E856FD5C5B8CF93D8 /* Check Pods Manifest.lock */,
 				D34FA0591B9309F300DECB3F /* Sources */,
 				D34FA05A1B9309F300DECB3F /* Frameworks */,
 				D34FA05B1B9309F300DECB3F /* Resources */,
+				FCA6772921F2EDBC64EA7EF4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,6 +320,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		59BE890E856FD5C5B8CF93D8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FCA6772921F2EDBC64EA7EF4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D34FA0591B9309F300DECB3F /* Sources */ = {
@@ -374,21 +491,33 @@
 		};
 		D34FA0801B9309F300DECB3F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB899088F6CFB4606ED4E84A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppLikeTinder",
+				);
 				INFOPLIST_FILE = AppLikeTinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppLikeTinder/Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		D34FA0811B9309F300DECB3F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76EE566D02C77587F7EB734A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppLikeTinder",
+				);
 				INFOPLIST_FILE = AppLikeTinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppLikeTinder/Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -445,6 +574,7 @@
 				D34FA0811B9309F300DECB3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D34FA0821B9309F300DECB3F /* Build configuration list for PBXNativeTarget "AppLikeTinderTests" */ = {
 			isa = XCConfigurationList;
@@ -453,6 +583,7 @@
 				D34FA0841B9309F300DECB3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
