@@ -27,7 +27,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var initialViewController: UIViewController
         
         if currentUser() != nil {
-            initialViewController = storyboard.instantiateViewControllerWithIdentifier("ProfileNavController") as! UIViewController
+            
+            initialViewController = pageController
+            // initialViewController = storyboard.instantiateViewControllerWithIdentifier("PageController") as! UIViewController
         } else {
             initialViewController = storyboard.instantiateViewControllerWithIdentifier("LoginViewController") as! UIViewController
         }

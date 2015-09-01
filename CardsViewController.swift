@@ -23,6 +23,15 @@ class CardsViewController: UIViewController, SwipeViewDelegate {
     var backCard:Card?
     var frontCard:Card?
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationItem.titleView = UIImageView(image: UIImage(named: "nav-header"))
+        let leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "nav-back-button"), style: UIBarButtonItemStyle.Plain, target: self, action: "goToProfile:")
+        
+        navigationItem.setLeftBarButtonItem(leftBarButtonItem, animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -53,6 +62,10 @@ class CardsViewController: UIViewController, SwipeViewDelegate {
         swipeView.innerView = cardView
         
         return Card(cardView: cardView, swipeView: swipeView)
+    }
+    
+    func goToProfile(button: UIBarButtonItem) {
+        pageController.goToPreviousVC()
     }
     
     //SwipeDelegate
