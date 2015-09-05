@@ -120,16 +120,49 @@
                                     <constraint firstAttribute="width" constant="260" id="wId-Wg-n8a"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fjm-3R-3qi">
+                                <rect key="frame" x="355" y="505" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="Nps-VJ-8f6"/>
+                                    <constraint firstAttribute="width" constant="75" id="Svp-3W-0yV"/>
+                                </constraints>
+                                <state key="normal" image="yeah-button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="yeahButtonPressed:" destination="JGD-wl-4Gk" eventType="touchUpInside" id="WDS-iC-nBa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uyq-gl-qva">
+                                <rect key="frame" x="170" y="505" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="MUT-EX-MY1"/>
+                                    <constraint firstAttribute="height" constant="75" id="sWX-Ck-Rfj"/>
+                                </constraints>
+                                <state key="normal" image="nah-button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nahButtonPressed:" destination="JGD-wl-4Gk" eventType="touchUpInside" id="Jod-P5-yLG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="uyq-gl-qva" secondAttribute="centerX" constant="92.5" id="8S4-pJ-flh"/>
                             <constraint firstAttribute="centerX" secondItem="bBp-WN-Gxl" secondAttribute="centerX" id="9KI-f3-y5c"/>
+                            <constraint firstAttribute="centerX" secondItem="Fjm-3R-3qi" secondAttribute="centerX" constant="-92.5" id="IHw-xM-0C5"/>
                             <constraint firstItem="bBp-WN-Gxl" firstAttribute="top" secondItem="3US-fB-lOd" secondAttribute="bottom" constant="10" id="PAm-H7-ZAs"/>
+                            <constraint firstItem="oWP-n5-EE9" firstAttribute="top" secondItem="Fjm-3R-3qi" secondAttribute="bottom" constant="20" id="X4y-TS-D7e"/>
+                            <constraint firstItem="Fjm-3R-3qi" firstAttribute="leading" secondItem="uyq-gl-qva" secondAttribute="trailing" constant="110" id="hBj-kM-Fda"/>
+                            <constraint firstItem="oWP-n5-EE9" firstAttribute="top" secondItem="uyq-gl-qva" secondAttribute="bottom" constant="20" id="lzI-IK-HAi"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jXd-tS-8Fr"/>
                     <connections>
                         <outlet property="cardStackView" destination="bBp-WN-Gxl" id="Qoy-ku-Yzq"/>
+                        <outlet property="nahButton" destination="uyq-gl-qva" id="pb7-wx-vlq"/>
+                        <outlet property="yeahButton" destination="Fjm-3R-3qi" id="72O-uv-2Y5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ezo-Iy-0ES" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -172,5 +205,78 @@
             </objects>
             <point key="canvasLocation" x="-572" y="1909"/>
         </scene>
+        <!--Root View Controller-->
+        <scene sceneID="hOe-wu-sDf">
+            <objects>
+                <tableViewController id="Kw6-G4-IwY" customClass="MatchesTableViewController" customModule="AppLikeTinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="DQb-xw-NTB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="82" id="JZp-lU-W0d" customClass="UserCell" customModule="AppLikeTinder" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JZp-lU-W0d" id="vP1-rx-PTZ">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="k8A-Vg-Kit">
+                                            <rect key="frame" x="8" y="3" width="75" height="75"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="75" id="62S-rH-tHe"/>
+                                                <constraint firstAttribute="height" constant="75" id="uo2-94-LIT"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llm-b2-Scc">
+                                            <rect key="frame" x="91" y="30" width="501" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="k8A-Vg-Kit" firstAttribute="leading" secondItem="vP1-rx-PTZ" secondAttribute="leadingMargin" id="06S-ym-VIV"/>
+                                        <constraint firstItem="llm-b2-Scc" firstAttribute="trailing" secondItem="vP1-rx-PTZ" secondAttribute="trailingMargin" id="69e-VJ-Nd0"/>
+                                        <constraint firstItem="llm-b2-Scc" firstAttribute="leading" secondItem="k8A-Vg-Kit" secondAttribute="trailing" constant="8" id="Kzs-37-YtC"/>
+                                        <constraint firstItem="llm-b2-Scc" firstAttribute="top" secondItem="vP1-rx-PTZ" secondAttribute="topMargin" constant="22" id="j6R-TX-dgO"/>
+                                        <constraint firstItem="k8A-Vg-Kit" firstAttribute="top" secondItem="vP1-rx-PTZ" secondAttribute="topMargin" constant="-5" id="rn8-bY-cb8"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="avatarImageView" destination="k8A-Vg-Kit" id="dSL-cE-qDQ"/>
+                                    <outlet property="nameLabel" destination="llm-b2-Scc" id="GRk-6a-G42"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Kw6-G4-IwY" id="71E-05-h8K"/>
+                            <outlet property="delegate" destination="Kw6-G4-IwY" id="EXL-yn-2i0"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="ttx-Ql-U4D"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X7H-Ac-jho" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="2608"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Px2-cc-Q5r">
+            <objects>
+                <navigationController storyboardIdentifier="MatchesNavController" id="QDk-XP-hmG" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ucV-vp-f8c">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Kw6-G4-IwY" kind="relationship" relationship="rootViewController" id="Eyd-BB-Fle"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2lG-dU-KxA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-572" y="2613"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="nah-button" width="75" height="75"/>
+        <image name="yeah-button" width="75" height="75"/>
+    </resources>
 </document>
