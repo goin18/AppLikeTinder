@@ -24,6 +24,14 @@ class UserCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        avatarImageView.layer.cornerRadius = avatarImageView.frame.height / 2
+        avatarImageView.layer.masksToBounds = true
+        
+    }
+    
     
 
 }

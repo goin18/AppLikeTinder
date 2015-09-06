@@ -13,16 +13,19 @@ class MatchesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        self.navigationItem.titleView = UIImageView(image: UIImage(named: "chat-header"))
+        
+        let leftBarButtomItem = UIBarButtonItem(image: UIImage(named: "nav-back-button"), style: UIBarButtonItemStyle.Plain, target: self, action: "goToPreviousVC:")
+        navigationItem.setLeftBarButtonItem(leftBarButtomItem, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func goToPreviousVC(button: UIBarButtonItem){
+        pageController.goToPreviousVC()
     }
 
     // MARK: - Table view data source
