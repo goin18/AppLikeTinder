@@ -63,6 +63,10 @@ class MatchesTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let vc = ChatViewController()
+        navigationController?.pushViewController(vc, animated: true)
+        
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
 

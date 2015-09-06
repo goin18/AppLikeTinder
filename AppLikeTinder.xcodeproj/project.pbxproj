@@ -36,6 +36,7 @@
 		D3F305F61B945C16009125E5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F305F51B945C16009125E5 /* SystemConfiguration.framework */; };
 		D3F305F81B945C20009125E5 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F305F71B945C20009125E5 /* libz.dylib */; };
 		D3F305FA1B945C2B009125E5 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F305F91B945C2B009125E5 /* libsqlite3.dylib */; };
+		D3FB51371B9C6FC900951B79 /* ChatViewCcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FB51361B9C6FC900951B79 /* ChatViewCcontroller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		D3F305F71B945C20009125E5 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		D3F305F91B945C2B009125E5 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		D3F305FB1B945CF2009125E5 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		D3FB51361B9C6FC900951B79 /* ChatViewCcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewCcontroller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 				D34FA08B1B9318D100DECB3F /* CardsViewController.swift */,
 				D3D7183B1B94AF5C001CF5E7 /* ProfileViewController.swift */,
 				D31F86221B99D36F0073A0D6 /* MatchesTableViewController.swift */,
+				D3FB51361B9C6FC900951B79 /* ChatViewCcontroller.swift */,
 			);
 			name = ViewControllers;
 			path = ..;
@@ -393,6 +396,7 @@
 				D3D7183A1B94A2B3001CF5E7 /* User.swift in Sources */,
 				D34FA0871B930A5700DECB3F /* CardView.swift in Sources */,
 				D3D7183C1B94AF5C001CF5E7 /* ProfileViewController.swift in Sources */,
+				D3FB51371B9C6FC900951B79 /* ChatViewCcontroller.swift in Sources */,
 				D34FA0891B93108A00DECB3F /* SwipeView.swift in Sources */,
 				D31F86251B99D7C10073A0D6 /* UserCell.swift in Sources */,
 				D34FA0631B9309F300DECB3F /* AppDelegate.swift in Sources */,
