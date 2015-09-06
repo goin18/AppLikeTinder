@@ -37,6 +37,9 @@
 		D3F305F81B945C20009125E5 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F305F71B945C20009125E5 /* libz.dylib */; };
 		D3F305FA1B945C2B009125E5 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F305F91B945C2B009125E5 /* libsqlite3.dylib */; };
 		D3FB51371B9C6FC900951B79 /* ChatViewCcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FB51361B9C6FC900951B79 /* ChatViewCcontroller.swift */; };
+		D3FB51391B9CA1DB00951B79 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FB51381B9CA1DB00951B79 /* libicucore.dylib */; };
+		D3FB513B1B9CA21400951B79 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FB513A1B9CA21400951B79 /* libc++.dylib */; };
+		D3FB513D1B9CA24400951B79 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FB513C1B9CA24400951B79 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +90,9 @@
 		D3F305F91B945C2B009125E5 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		D3F305FB1B945CF2009125E5 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		D3FB51361B9C6FC900951B79 /* ChatViewCcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewCcontroller.swift; sourceTree = "<group>"; };
+		D3FB51381B9CA1DB00951B79 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		D3FB513A1B9CA21400951B79 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		D3FB513C1B9CA24400951B79 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3FB513B1B9CA21400951B79 /* libc++.dylib in Frameworks */,
+				D3FB51391B9CA1DB00951B79 /* libicucore.dylib in Frameworks */,
 				D3F305FA1B945C2B009125E5 /* libsqlite3.dylib in Frameworks */,
 				D3F305F81B945C20009125E5 /* libz.dylib in Frameworks */,
 				D3F305F61B945C16009125E5 /* SystemConfiguration.framework in Frameworks */,
@@ -123,6 +131,8 @@
 		C9B241720F2DEC6BE87DCECD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D3FB513A1B9CA21400951B79 /* libc++.dylib */,
+				D3FB51381B9CA1DB00951B79 /* libicucore.dylib */,
 				38397C4250986705400BD6E1 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -230,6 +240,7 @@
 			children = (
 				D3D718391B94A2B3001CF5E7 /* User.swift */,
 				D360D7251B9B041900B4E3E6 /* Match.swift */,
+				D3FB513C1B9CA24400951B79 /* Message.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -304,6 +315,7 @@
 				TargetAttributes = {
 					D34FA05C1B9309F300DECB3F = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = H26PDHED66;
 					};
 					D34FA0741B9309F300DECB3F = {
 						CreatedOnToolsVersion = 6.4;
@@ -401,6 +413,7 @@
 				D31F86251B99D7C10073A0D6 /* UserCell.swift in Sources */,
 				D34FA0631B9309F300DECB3F /* AppDelegate.swift in Sources */,
 				D360D7261B9B041900B4E3E6 /* Match.swift in Sources */,
+				D3FB513D1B9CA24400951B79 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +543,7 @@
 			baseConfigurationReference = BB899088F6CFB4606ED4E84A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AppLikeTinder",
@@ -546,6 +560,7 @@
 			baseConfigurationReference = 76EE566D02C77587F7EB734A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AppLikeTinder",
